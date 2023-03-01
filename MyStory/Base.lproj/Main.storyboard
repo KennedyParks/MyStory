@@ -1,24 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neytiri" translatesAutoresizingMaskIntoConstraints="NO" id="AM4-i0-kgN">
+                                <rect key="frame" x="76" y="135" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="JbA-wN-8a5"/>
+                                    <constraint firstAttribute="width" constant="240" id="dMU-By-Q3Z"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6A8-bz-s7s">
+                                <rect key="frame" x="146" y="281" width="100" height="35"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2hO-O6-gMO"/>
+                                    <constraint firstAttribute="width" constant="100" id="BAV-ja-PGe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Family"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Family">
+                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="0.18929368260000001" green="0.40526497360000002" blue="0.30586978790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RfO-Bl-SH5" appends="YES" id="UuQ-6T-5C0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjp-wP-RFr">
+                                <rect key="frame" x="146" y="324" width="100" height="35"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3HB-wc-kQu"/>
+                                    <constraint firstAttribute="width" constant="100" id="Bma-wr-W5i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="NmA-N1-gvu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="rHl-et-bvx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Skills">
+                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="0.18929368260000001" green="0.40526497360000002" blue="0.30586978790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0FT-hJ-npa" appends="YES" id="jmo-gm-VHf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neytiri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyy-xc-s8f">
+                                <rect key="frame" x="0.0" y="80" width="393" height="53"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enq-lq-A5s">
+                                <rect key="frame" x="146" y="367" width="100" height="35"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2MW-Df-Oxu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="DUP-aL-Msp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Opa-r6-Nd4"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="Tam-5W-ZJk"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="boM-uC-zaQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="zTb-ga-2tf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Role">
+                                    <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="0.18929368260000001" green="0.40526497360000002" blue="0.30586978790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xeo-cI-TnY" appends="YES" id="ali-lf-UAo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.10470290617673468" green="0.17491027687611499" blue="0.18542742488360164" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Fyy-xc-s8f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EiH-9I-6hF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6A8-bz-s7s" secondAttribute="trailing" constant="143" id="JHQ-If-o2J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AM4-i0-kgN" secondAttribute="trailing" constant="61" id="LcF-hX-sKf"/>
+                            <constraint firstItem="Kjp-wP-RFr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="143" id="LwV-0c-0Ie"/>
+                            <constraint firstItem="enq-lq-A5s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="143" id="Nbe-3u-xJp"/>
+                            <constraint firstItem="enq-lq-A5s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="308" id="Sbm-ly-hE7"/>
+                            <constraint firstItem="Kjp-wP-RFr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="265" id="Vrn-bY-Auj"/>
+                            <constraint firstItem="6A8-bz-s7s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="143" id="aVz-rX-cuP"/>
+                            <constraint firstItem="AM4-i0-kgN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="76" id="aoA-3I-RuS"/>
+                            <constraint firstItem="AM4-i0-kgN" firstAttribute="top" secondItem="Fyy-xc-s8f" secondAttribute="bottom" constant="2" id="cae-yo-pOK"/>
+                            <constraint firstItem="AM4-i0-kgN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="es9-FZ-ajr"/>
+                            <constraint firstItem="Fyy-xc-s8f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jSE-1p-Vbt"/>
+                            <constraint firstItem="6A8-bz-s7s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="222" id="moC-fd-yZ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="enq-lq-A5s" secondAttribute="trailing" constant="143" id="nFf-r8-IDU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kjp-wP-RFr" secondAttribute="trailing" constant="143" id="noV-tG-J0x"/>
+                            <constraint firstItem="Fyy-xc-s8f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="y42-b9-DvW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="6le-fO-Tby" kind="show" identifier="famSegue" id="fsU-1a-RNF"/>
+                        <segue destination="SMl-lo-nAU" kind="show" identifier="skillsSegue" id="x8F-bR-7HA"/>
+                        <segue destination="gQ7-jx-ZXW" kind="show" identifier="roleSegue" id="3zB-qG-fXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RfO-Bl-SH5">
+                    <connections>
+                        <action selector="didTapFamily:" destination="BYZ-38-t0r" id="rPP-Gr-xMV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0FT-hJ-npa">
+                    <connections>
+                        <action selector="didTapSkills:" destination="BYZ-38-t0r" id="XK5-c3-NOS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xeo-cI-TnY">
+                    <connections>
+                        <action selector="didTapRole:" destination="BYZ-38-t0r" id="Yca-ik-t1o"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="38.931297709923662" y="18.30985915492958"/>
+        </scene>
+        <!--FamViewController-->
+        <scene sceneID="WdS-Qd-alO">
+            <objects>
+                <viewController title="FamViewController" id="6le-fO-Tby" customClass="FamViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPU-BG-6vW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sully-fam" translatesAutoresizingMaskIntoConstraints="NO" id="yzA-7K-duf">
+                                <rect key="frame" x="76" y="151" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="L0b-pg-fOc"/>
+                                    <constraint firstAttribute="height" constant="128" id="htw-3J-h4u"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ik-Yh-fl6">
+                                <rect key="frame" x="16" y="316" width="358" height="79"/>
+                                <string key="text">Neytiri comes from a strong family. Omiticaya clan leader, Eytukan, is her father. Her mother is Mo'at, the Tsahik of the Omitikaya clan.</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="-7" height="-1"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBc-pO-WPS">
+                                <rect key="frame" x="-1" y="0.0" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Family" id="b9R-0L-AYh"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rGK-3J-NCI"/>
+                        <color key="backgroundColor" red="0.1047029062" green="0.17491027689999999" blue="0.1854274249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5ik-Yh-fl6" firstAttribute="leading" secondItem="rGK-3J-NCI" secondAttribute="leading" constant="16" id="4Kt-sh-MrG"/>
+                            <constraint firstItem="rGK-3J-NCI" firstAttribute="trailing" secondItem="yzA-7K-duf" secondAttribute="trailing" constant="77" id="Fff-XL-LBF"/>
+                            <constraint firstItem="5ik-Yh-fl6" firstAttribute="top" secondItem="yzA-7K-duf" secondAttribute="bottom" constant="37" id="ToX-9N-XLp"/>
+                            <constraint firstItem="yzA-7K-duf" firstAttribute="top" secondItem="rGK-3J-NCI" secondAttribute="top" constant="92" id="UXi-m2-4H8"/>
+                            <constraint firstItem="rGK-3J-NCI" firstAttribute="trailing" secondItem="5ik-Yh-fl6" secondAttribute="trailing" constant="19" id="WTn-3d-mbj"/>
+                            <constraint firstItem="yzA-7K-duf" firstAttribute="leading" secondItem="rGK-3J-NCI" secondAttribute="leading" constant="76" id="XXA-7i-35Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Qw-Ri-jNg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbA-7d-lui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277.09923664122135" y="-673.23943661971839"/>
+        </scene>
+        <!--Skills View Controller-->
+        <scene sceneID="JQH-zQ-XPY">
+            <objects>
+                <viewController id="SMl-lo-nAU" customClass="SkillsViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJd-eO-hh8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neytiri-bow" translatesAutoresizingMaskIntoConstraints="NO" id="wAC-ml-h9b">
+                                <rect key="frame" x="76" y="153" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="C0y-Lc-cke"/>
+                                    <constraint firstAttribute="height" constant="128" id="Ukx-BD-Lqf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjl-xh-E6o">
+                                <rect key="frame" x="18" y="325" width="356" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="356" id="HXL-2y-iIB"/>
+                                    <constraint firstAttribute="height" constant="92" id="oZs-iM-MlL"/>
+                                </constraints>
+                                <string key="text">Neytiri is very skilled with the bow and arrow. In the first Avatar movie, she killed Quaritch by striking him twice in the heart from afar.</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4DB-6z-35g">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Skills" id="KjZ-bf-wH1"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M50-6c-62X"/>
+                        <color key="backgroundColor" red="0.1047029062" green="0.17491027689999999" blue="0.1854274249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wjl-xh-E6o" firstAttribute="leading" secondItem="iJd-eO-hh8" secondAttribute="leadingMargin" constant="2" id="6zI-X8-KPt"/>
+                            <constraint firstItem="wjl-xh-E6o" firstAttribute="top" secondItem="wAC-ml-h9b" secondAttribute="bottom" constant="44" id="BhR-WM-VgP"/>
+                            <constraint firstItem="wAC-ml-h9b" firstAttribute="top" secondItem="M50-6c-62X" secondAttribute="top" constant="94" id="H2C-fh-vYy"/>
+                            <constraint firstItem="M50-6c-62X" firstAttribute="trailing" secondItem="wAC-ml-h9b" secondAttribute="trailing" constant="77" id="QEC-11-h32"/>
+                            <constraint firstItem="wAC-ml-h9b" firstAttribute="leading" secondItem="M50-6c-62X" secondAttribute="leading" constant="76" id="rcN-Yg-MTR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wjl-xh-E6o" secondAttribute="trailing" constant="3" id="t9E-Zu-f4v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Up6-UF-1Zs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VjJ-of-5H9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475.57251908396944" y="-647.18309859154931"/>
+        </scene>
+        <!--Role View Controller-->
+        <scene sceneID="Mj8-Y7-o8H">
+            <objects>
+                <viewController id="gQ7-jx-ZXW" customClass="RoleViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nRi-Qg-RQa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neytiri-role" translatesAutoresizingMaskIntoConstraints="NO" id="oLK-Lm-Pea">
+                                <rect key="frame" x="76" y="140" width="240" height="128"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="FlV-ox-G81"/>
+                                    <constraint firstAttribute="height" constant="128" id="jRk-qJ-LLz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="933-dP-yH3">
+                                <rect key="frame" x="41" y="289" width="311" height="106"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Neytiri was trained as a hunter which is certianly why her shooting skills are so sharp. As the daughter of the Tsahik, she will eventually become Tsahik.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Papyrus"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" red="0.090893800339999997" green="0.066158462330000001" blue="0.1854274249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QjV-3S-AHH">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Role" id="w54-kg-8iP"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0sc-dw-f62"/>
+                        <color key="backgroundColor" red="0.1047029062" green="0.17491027689999999" blue="0.1854274249" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="0sc-dw-f62" firstAttribute="trailing" secondItem="oLK-Lm-Pea" secondAttribute="trailing" constant="77" id="Kfg-rj-jR7"/>
+                            <constraint firstItem="0sc-dw-f62" firstAttribute="trailing" secondItem="933-dP-yH3" secondAttribute="trailing" constant="41" id="UoB-uI-IkW"/>
+                            <constraint firstItem="oLK-Lm-Pea" firstAttribute="leading" secondItem="0sc-dw-f62" secondAttribute="leading" constant="76" id="axw-ON-WAE"/>
+                            <constraint firstItem="933-dP-yH3" firstAttribute="leading" secondItem="0sc-dw-f62" secondAttribute="leading" constant="41" id="gP8-tj-Irw"/>
+                            <constraint firstItem="oLK-Lm-Pea" firstAttribute="top" secondItem="0sc-dw-f62" secondAttribute="top" constant="81" id="ozy-p1-bfa"/>
+                            <constraint firstItem="933-dP-yH3" firstAttribute="top" secondItem="oLK-Lm-Pea" secondAttribute="bottom" constant="21" id="zx9-pr-PKm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="euK-q3-c71"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTi-Aa-IUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249.6183206106871" y="-647.18309859154931"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="neytiri" width="780" height="438"/>
+        <image name="neytiri-bow" width="500" height="293"/>
+        <image name="neytiri-role" width="728" height="455"/>
+        <image name="sully-fam" width="2070" height="1116"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

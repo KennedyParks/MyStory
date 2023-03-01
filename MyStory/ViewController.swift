@@ -14,6 +14,24 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTapFamily(_ sender: UITapGestureRecognizer) {
+        if let tappedView = sender.view {
+            performSegue(withIdentifier: "famSegue", sender: tappedView)
+        }
+    }
+    
+    
+    @IBAction func didTapSkills(_ sender: UITapGestureRecognizer) {
+        if let tappedView = sender.view {
+            performSegue(withIdentifier: "skillsSegue", sender: tappedView)
+        }
+    }
+    
+    
+    @IBAction func didTapRole(_ sender: UITapGestureRecognizer) {
+        if let tappedView = sender.view {
+            performSegue(withIdentifier: "roleSegue", sender: tappedView)
+        }
+    }
 }
 
